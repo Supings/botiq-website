@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotIQ Flyer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #075E54 0%, #128C7E 50%, #25D366 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .flyer {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #075E54, #128C7E);
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .headline {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a2e;
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 1.3;
+        }
+        
+        .headline span {
+            color: #25D366;
+        }
+        
+        .features {
+            margin-bottom: 30px;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .feature:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-icon {
+            font-size: 28px;
+            margin-right: 15px;
+            width: 40px;
+        }
+        
+        .feature-text {
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .pricing {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .pricing-value {
+            font-size: 42px;
+            font-weight: 800;
+            color: #25D366;
+        }
+        
+        .pricing-note {
+            font-size: 14px;
+            color: #888;
+        }
+        
+        .perfect-for {
+            margin-bottom: 30px;
+        }
+        
+        .perfect-for h3 {
+            font-size: 18px;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .industries {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .industry {
+            background: #e8f5e9;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #2e7d32;
+        }
+        
+        .cta {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+        }
+        
+        .cta h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        
+        .cta-contact {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .cta-web {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 12px;
+        }
+        
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            
+            .flyer {
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <div class="header">
+            <div class="logo">BotIQ</div>
+            <div class="tagline">WhatsApp Automation for Business</div>
+        </div>
+        
+        <div class="content">
+            <h2 class="headline">
+                Stop Missing Customers.<br>
+                <span>Automate Your WhatsApp.</span>
+            </h2>
+            
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">💬</span>
+                    <span class="feature-text">Auto-reply to every message instantly</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📅</span>
+                    <span class="feature-text">Take bookings & appointments 24/7</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📋</span>
+                    <span class="feature-text">Show your menu, services & prices</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">❓</span>
+                    <span class="feature-text">Answer FAQs automatically</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🌙</span>
+                    <span class="feature-text">Works while you sleep!</span>
+                </div>
+            </div>
+            
+            <div class="pricing">
+                <div class="pricing-label">Starting from</div>
+                <div class="pricing-value">R2,500</div>
+                <div class="pricing-note">Once-off • No monthly fees • Setup in 7-10 days</div>
+            </div>
+            
+            <div class="perfect-for">
+                <h3>Perfect For:</h3>
+                <div class="industries">
+                    <span class="industry">🍕 Restaurants</span>
+                    <span class="industry">💇 Salons</span>
+                    <span class="industry">🏠 Real Estate</span>
+                    <span class="industry">🛍️ Shops</span>
+                    <span class="industry">🏥 Medical</span>
+                    <span class="industry">💪 Gyms</span>
+                </div>
+            </div>
+            
+            <div class="cta">
+                <h3>Get Your Free Demo Today!</h3>
+                <div class="cta-contact">📱 073 816 6068</div>
+                <div class="cta-web">🌐 botiq-website.vercel.app</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            © 2025 BotIQ | Built in Johannesburg, South Africa 🇿🇦
+        </div>
+    </div>
+</body>
+</html>
